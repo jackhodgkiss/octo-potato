@@ -16,9 +16,9 @@ if [[ -f ${KAYOBE_AUTOMATION_REPO_ROOT}/etc/kolla/public-openrc.sh ]]; then
 fi
 
 KAYOBE_CONFIG_VAULTED_FILES_PATHS_EXTRA=(
-    "etc/kayobe/environments/kolla/config/cinder/cinder-backup/ceph.client.cinder-backup.keyring"
-    "etc/kayobe/environments/kolla/config/cinder/cinder-backup/ceph.client.cinder.keyring"
-    "etc/kayobe/environments/kolla/config/cinder/cinder-volume/ceph.client.cinder.keyring"
-    "etc/kayobe/environments/kolla/config/glance/ceph.client.glance.keyring"
-    "etc/kayobe/environments/kolla/config/nova/ceph.client.cinder.keyring"
+    "etc/kayobe/kolla/config/cinder/cinder-backup/ceph.client.cinder-backup.keyring"
+    "etc/kayobe/kolla/config/cinder/cinder-backup/ceph.client.cinder.keyring"
+    "etc/kayobe/kolla/config/cinder/cinder-volume/ceph.client.cinder.keyring"
+    "etc/kayobe/kolla/config/glance/ceph.client.glance.keyring"
+    "etc/kayobe/kolla/config/nova/ceph.client.cinder.keyring"
 )
