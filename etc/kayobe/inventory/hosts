@@ -43,3 +43,10 @@ operations
 [tempest_runner]
 operations-01
 
+[github-runner]
+
+[github-runner:children]
+operations
+
+[github-writer]
+localhost

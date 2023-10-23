@@ -1,0 +1,24 @@
+---
+runner_user: cloud-user
+github_account: jackhodgkiss
+github_repo: octo-potato
+access_token: "{{ secrets_github_access_token }}"
+
+base_runner_dir: /opt/actions-runner
+
+hide_sensitive_logs: false
+
+default_runner_labels:
+  - kayobe
+  - openstack
+
+github_runners:
+  runner_01: {}
+  runner_02: {}
+  runner_03: {}
+
+docker_users:
+  - cloud-user
+
+pip_install_packages:
+  - name: docker

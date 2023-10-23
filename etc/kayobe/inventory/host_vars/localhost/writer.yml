@@ -1,0 +1,15 @@
+---
+github_output_directory: "{{ kayobe_config_path }}/../../.github/workflows"
+
+github_runs_on:
+  - kayobe
+  - openstack
+
+github_registry:
+  url: pulp.infra.os.hodgkiss.cloud
+  username: admin
+  password: ${{ secrets.REGISTRY_PASSWORD }}
+
+github_buildx_enabled: false
+
+github_kayobe_base_image: quay.io/rockylinux/rockylinux:9
