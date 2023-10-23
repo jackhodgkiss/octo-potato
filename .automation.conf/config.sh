@@ -14,3 +14,11 @@ fi
 if [[ -f ${KAYOBE_AUTOMATION_REPO_ROOT}/etc/kolla/public-openrc.sh ]]; then
     export TEMPEST_OPENRC="$(< ${KAYOBE_AUTOMATION_REPO_ROOT}/etc/kolla/public-openrc.sh)"
 fi
+
+KAYOBE_CONFIG_VAULTED_FILES_PATHS_EXTRA=(
+    "etc/kayobe/environments/$KAYOBE_ENVIRONMENT/kolla/config/cinder/cinder-backup/ceph.client.cinder-backup.keyring"
+    "etc/kayobe/environments/$KAYOBE_ENVIRONMENT/kolla/config/cinder/cinder-backup/ceph.client.cinder.keyring"
+    "etc/kayobe/environments/$KAYOBE_ENVIRONMENT/kolla/config/cinder/cinder-volume/ceph.client.cinder.keyring"
+    "etc/kayobe/environments/$KAYOBE_ENVIRONMENT/kolla/config/glance/ceph.client.glance.keyring"
+    "etc/kayobe/environments/$KAYOBE_ENVIRONMENT/kolla/config/nova/ceph.client.cinder.keyring"
+)
