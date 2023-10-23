@@ -33,3 +33,13 @@ controllers
 controllers
 
 [rgws]
+
+[operations]
+operations-01
+
+[infra-vms:children]
+operations
+
+[tempest_runner]
+operations-01
+

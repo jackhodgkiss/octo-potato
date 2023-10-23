@@ -2,6 +2,7 @@ admin_oc_ips:
   controller-01: 10.0.0.3
   controller-02: 10.0.0.4
   controller-03: 10.0.0.5
+  operations-01: 10.0.0.252
   seed-01: 10.0.0.2
 cleaning_ips:
   controller-01: 10.0.100.3
@@ -35,6 +36,7 @@ public_ips:
   controller-01: 10.0.50.3
   controller-02: 10.0.50.4
   controller-03: 10.0.50.5
+  operations-01: 10.0.50.252
   seed-01: 10.0.50.2
 storage_ips:
   controller-01: 10.0.70.3
