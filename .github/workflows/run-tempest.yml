@@ -55,9 +55,6 @@ jobs:
           KAYOBE_AUTOMATION_TEMPEST_LOADLIST: '${{ github.event.inputs.test_suite }}'
           TEMPEST_PATTERN: '${{ github.event.inputs.tempest_pattern }}'
           TEMPEST_OPENRC: "${{ secrets.TEMPEST_OPENRC }}"
-          KAYOBE_AUTOMATION_RALLY_DOCKER_REGISTRY: "pulp.infra.os.hodgkiss.cloud"
-          KAYOBE_AUTOMATION_RALLY_DOCKER_REGISTRY_USERNAME: 'admin'
-          KAYOBE_AUTOMATION_RALLY_DOCKER_REGISTRY_PASSWORD: "${{ secrets.REGISTRY_PASSWORD }}"
           HOME: '/stack'
 
       - name: Print stdout
