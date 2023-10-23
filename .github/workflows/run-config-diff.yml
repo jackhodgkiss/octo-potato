@@ -11,9 +11,6 @@ jobs:
   prepare-runner:
     uses: ./.github/workflows/prepare-runner.yml
   run-config-diff:
-    strategy:
-      matrix:
-        environment: []
     runs-on: ['kayobe', 'openstack', 'production']
     permissions:
       contents: read
